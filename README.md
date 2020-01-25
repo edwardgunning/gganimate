@@ -1,3 +1,3 @@
 # LocPolyGif
 
-This repository contains was edited in RStudio
+This repository was edited in RStudio
