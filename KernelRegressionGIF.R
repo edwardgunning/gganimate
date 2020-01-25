@@ -73,7 +73,7 @@ for(i in 1:length(bandgrid)){
 }
 
 
-##### creat gif
+##### create gif
 k.gif <- k.data %>%
   ggplot(mapping = aes(x=x.kern, y=y.kern))+
   ylim(c(0,max(k.data$y.data)))+
