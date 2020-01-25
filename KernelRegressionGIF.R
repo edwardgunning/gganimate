@@ -1,4 +1,4 @@
-####### First we'll create the static code
+####### Packages Used
 library(tidyverse)
 library(gganimate)
 library(KernSmooth)
@@ -6,18 +6,19 @@ library(extrafont)
 library(refund)
 
 
-
+#### defining data 
 DTI.argvals = c(1:93)/93
-DTI.example = DTI$cca[1,]
+DTI.example = DTI$cca[1,] # I've just picked the first subject
 
-
+# Gaussian Kernel - could use an alternative
 Kernel <- function(x,b){
   K <- (1/((sqrt(2*pi))))*exp(-0.5 *(x/b)^2)
   return(K)
 }
 
+#### Bandwidths we'll use
 bandgrid = seq(0.07,0.3, by=0.0025)
-
+### starting points
 band=0.06
 kern.evalpoints = seq(0,1, length.out = 93)
 kern.outpoints = Kernel(0.5-kern.evalpoints, b=band)
@@ -42,7 +43,7 @@ k.data = data.frame(x.data= DTI.argvals,
                          x.pointfive = rep(0.5,93),
                          y.pointfive= rep(point.est,93),
                          h = rep(band,93)) 
-
+##### evaluate for different bandwidths
 
 for(i in 1:length(bandgrid)){
   band = bandgrid[i]
@@ -72,7 +73,7 @@ for(i in 1:length(bandgrid)){
 }
 
 
-
+##### creat gif
 k.gif <- k.data %>%
   ggplot(mapping = aes(x=x.kern, y=y.kern))+
   ylim(c(0,max(k.data$y.data)))+
@@ -97,6 +98,6 @@ k.gif <- k.data %>%
   transition_time(h)
   
 k.gif  
-
+#### save gif
 animate(k.gif, renderer = gifski_renderer(file="Kern.gif",loop='F'))
 
