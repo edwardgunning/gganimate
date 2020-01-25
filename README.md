@@ -1,2 +1,3 @@
 # LocPolyGif
-GIF for locally weighted polynomial regression with gganimate
+
+This repository contains was edited in RStudio
