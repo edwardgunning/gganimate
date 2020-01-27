@@ -3,8 +3,8 @@ library(fda)
 library(fda.usc)
 library(extrafont)
 library(ggExtra)
-
-
+library(reshape2)
+library(gganimate)
 ##### I'm just getting some random data here and making the y values nicely in the range 0,1
 data(aemet,package = "fda.usc")
 x = aemet$temp$argvals
