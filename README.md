@@ -1,8 +1,22 @@
-# LocPolyGif
-## A GIF for Locally Weighted Polynomial Regression
+# FDA GIFs 
 
+## It's all for fun! 
 
-Use of the `gganimate` package to produce a GIF of locally weighted kernel regression.
+This repository is where I have some fun with the `gganimate` package to produce GIFs for some topics in my research area -  functional data analysis (FDA). So far this includes:
 
-The plot shows the effect of varying the bandwidth parameter on the global approximating function, the local approximating function at a point and the kernel weights.
+### Fourier Basis 
 
+![](fourier.gif)
+
+### Locally Weighted Polynomial Regression
+
+![](Kern.gif)
+
+### Handwriting X-Y (fda)
+
+![](fda.gif)
+
+## More
+* ideas and feedback always appreciated
+* ideas for collabaration also!
+* get me at edward.gunning@ul.ie
