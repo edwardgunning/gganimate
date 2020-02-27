@@ -16,6 +16,10 @@ This repository is where I have some fun with the `gganimate` package to produce
 
 ![](fda.gif)
 
+### Gait Cycle FPCA (fda)
+
+![](pca.gif)
+
 ## More
 * ideas and feedback always appreciated
 * ideas for collabaration also!
