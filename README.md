@@ -2,7 +2,10 @@
 
 ## It's all for fun! 
 
-This repository is where I have some fun with the `gganimate` package to produce GIFs for some topics in my research area -  functional data analysis (FDA). So far this includes:
+This repository is where I have some fun with the `gganimate` package to produce GIFs for some topics statistics. The idea is to use animations to describe statistical concepts that might not be intuitive through animation.
+
+A lot of these will be related to functional data analysis (FDA), but not limited to this area. So far I've produced:
+
 
 ### Fourier Basis 
 
@@ -19,6 +22,10 @@ This repository is where I have some fun with the `gganimate` package to produce
 ### Gait Cycle FPCA (fda)
 
 ![](pca.gif)
+
+### Frequentist Confidence Intervals (CI)
+
+![](confint.gif)
 
 ## More
 * ideas and feedback always appreciated
